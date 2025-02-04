@@ -20,10 +20,13 @@ namespace MasterPolProject.Pages
     /// </summary>
     public partial class ViewPage : Page
     {
+        
         public ViewPage()
         {
+            var context = Data.MasterPolEntities.GetContext();
             InitializeComponent();
-            MainListVIew.ItemsSource = Data.MasterPolEntities.GetContext().Partners.ToList();
+            MainListVIew.ItemsSource = context.Partners.Select(d => d.PartnerName).ToList();
+            
         }
     }
 }
