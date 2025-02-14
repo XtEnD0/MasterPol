@@ -123,16 +123,6 @@
     <Property Name="StreetName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="Adress" Relationship="Self.FK_Adress_Street" FromRole="Street" ToRole="Adress" />
   </EntityType>
-  <EntityType Name="sysdiagrams">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="principal_id" Type="Int32" Nullable="false" />
-    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="version" Type="Int32" />
-    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
-  </EntityType>
   <Association Name="FK_Adress_Area">
     <End Role="Area" Type="Self.Area" Multiplicity="1" />
     <End Role="Adress" Type="Self.Adress" Multiplicity="*" />
@@ -266,7 +256,6 @@
     <EntitySet Name="Products" EntityType="Self.Products" />
     <EntitySet Name="ProductType" EntityType="Self.ProductType" />
     <EntitySet Name="Street" EntityType="Self.Street" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
     <AssociationSet Name="FK_Adress_Area" Association="Self.FK_Adress_Area">
       <End Role="Area" EntitySet="Area" />
       <End Role="Adress" EntitySet="Adress" />

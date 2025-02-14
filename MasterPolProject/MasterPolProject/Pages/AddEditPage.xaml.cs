@@ -16,22 +16,22 @@ using System.Windows.Shapes;
 namespace MasterPolProject.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для ViewPage.xaml
+    /// Логика взаимодействия для AddEditPage.xaml
     /// </summary>
-    public partial class ViewPage : Page
+    public partial class AddEditPage : Page
     {
-        
-        public ViewPage()
+        public AddEditPage()
         {
-            var context = Data.MasterPolEntities.GetContext();
             InitializeComponent();
-            MainListVIew.ItemsSource = context.Partners.ToList();
-            
+            TypeComboBox.ItemsSource = Data.MasterPolEntities.GetContext().PartnerType.ToList();
         }
 
-        private void AddButton_Click(object sender, RoutedEventArgs e)
+        private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            Classes.Manager.MainFrame.Navigate(new Pages.AddEditPage());
+            if (Classes.Manager.MainFrame.CanGoBack)
+            {
+                Classes.Manager.MainFrame.GoBack();
+            }
         }
     }
 }

@@ -23,14 +23,14 @@ namespace MasterPolProject.Data
         private static MasterPolEntities _context;
         public static MasterPolEntities GetContext()
         {
-            if(_context == null)
+            if (_context == null)
             {
                 _context = new MasterPolEntities();
 
             }
             return _context;
         }
-    
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
@@ -48,6 +48,5 @@ namespace MasterPolProject.Data
         public virtual DbSet<Products> Products { get; set; }
         public virtual DbSet<ProductType> ProductType { get; set; }
         public virtual DbSet<Street> Street { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
     }
 }

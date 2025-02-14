@@ -19,7 +19,7 @@
             <Label Content="Мастер Пол" FontSize="30"
                    VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
         </Grid>
-            <Frame x:Name="MainFrame" Grid.Row="1"></Frame>
+            <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden"></Frame>
         
     </Grid>
 </Window>

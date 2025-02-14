@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="fc988b2d34ac4fe3b65a6cf22c1dbb6b" Name="Diagram1">
+      <Diagram DiagramId="0208ef66fbae4add883d4259994e47ab" Name="Diagram1">
         <EntityTypeShape EntityType="MasterPolModel.Adress" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
         <EntityTypeShape EntityType="MasterPolModel.Area" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
         <EntityTypeShape EntityType="MasterPolModel.City" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
@@ -17,7 +17,6 @@
         <EntityTypeShape EntityType="MasterPolModel.Products" Width="1.5" PointX="5.25" PointY="10.625" IsExpanded="true" />
         <EntityTypeShape EntityType="MasterPolModel.ProductType" Width="1.5" PointX="3" PointY="10.875" IsExpanded="true" />
         <EntityTypeShape EntityType="MasterPolModel.Street" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="MasterPolModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
         <AssociationConnector Association="MasterPolModel.FK_Adress_Area" ManuallyRouted="false" />
         <AssociationConnector Association="MasterPolModel.FK_Adress_City" ManuallyRouted="false" />
         <AssociationConnector Association="MasterPolModel.FK_Adress_Index" ManuallyRouted="false" />

@@ -23,3 +23,5 @@ C:\Users\lisav\Desktop\MasterPol\MasterPolProject\MasterPolProject\obj\Debug\Mas
 C:\Users\lisav\Desktop\MasterPol\MasterPolProject\MasterPolProject\obj\Debug\Pages\ViewPage.baml
 C:\Users\lisav\Desktop\MasterPol\MasterPolProject\MasterPolProject\obj\Debug\MasterPolProject.csproj.CopyComplete
 C:\Users\lisav\Desktop\MasterPol\MasterPolProject\MasterPolProject\obj\Debug\MasterPolProject.csproj.AssemblyReference.cache
+C:\Users\lisav\Desktop\MasterPol\MasterPolProject\MasterPolProject\obj\Debug\Pages\AddEditPage.g.cs
+C:\Users\lisav\Desktop\MasterPol\MasterPolProject\MasterPolProject\obj\Debug\Pages\AddEditPage.baml
