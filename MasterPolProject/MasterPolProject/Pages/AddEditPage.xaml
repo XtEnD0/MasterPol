@@ -24,31 +24,49 @@
                 VerticalAlignment="Center" HorizontalAlignment="Left"></Button>
         
         
-        <StackPanel>
-            <Label></Label>
-            <TextBox>
+        <StackPanel Grid.Column="0" Grid.Row="0" Width="250"
+                    VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Label Content="Наименование:" Margin="0,0,0,0"></Label>
+            <TextBox x:Name="NameTB"  Height="30">
                 
             </TextBox>
 
-            <Label></Label>
-            <ComboBox x:Name="TypeComboBox" DisplayMemberPath="TypeName"
+            <Label Content="Тип партнера:"  Margin="0,10,0,0"></Label>
+            <ComboBox x:Name="TypeComboBox" DisplayMemberPath="TypeName"  Height="30"
                       VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
             </ComboBox>
 
-            <Label></Label>
-            <TextBox>
+            <Label Content="Рейтинг:"  Margin="0,10,0,0"></Label>
+            <TextBox x:Name="RatingTB"  Height="30"> 
 
             </TextBox>
 
-            <Label></Label>
-            <TextBox>
+            <Label Content="Адрес:"  Margin="0,10,0,0"></Label>
+            <TextBox x:Name="AdressTB"  Height="30">
 
             </TextBox>
             
             
 
         </StackPanel>
-        
-        
+
+
+        <StackPanel Grid.Column="1" Grid.Row="0" Width="250"
+                    VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Label Content="ФИО Директора:"></Label>
+            <TextBox x:Name="DirectorTB" Height="30"></TextBox>
+
+            <Label Content="Телефон:"  Margin="0,10,0,0"></Label>
+            <TextBox x:Name="PhoneTB"  Height="30"></TextBox>
+
+            <Label Content="Email:"  Margin="0,10,0,0"></Label>
+            <TextBox x:Name="EmailTB"  Height="30"></TextBox>
+
+            <Button x:Name="SaveButton" Margin="0,10,0,0"  Height="30"
+                    Content="Сохранить" Click="SaveButton_Click"></Button>
+            
+        </StackPanel>
+
+
     </Grid>
 </Page>
