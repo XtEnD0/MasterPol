@@ -10,6 +10,7 @@
 
         <Style TargetType="Label">
             <Setter Property="FontFamily" Value="Segoe UI"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
         </Style>
 
         <Style TargetType="TextBlock">
@@ -18,7 +19,10 @@
         </Style>
         
         <Style TargetType="TextBox">
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+            <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
             <Setter Property="FontFamily" Value="Segoe UI"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
         </Style>
 
     </Application.Resources>

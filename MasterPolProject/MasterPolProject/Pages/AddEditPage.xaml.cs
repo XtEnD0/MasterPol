@@ -20,10 +20,35 @@ namespace MasterPolProject.Pages
     /// </summary>
     public partial class AddEditPage : Page
     {
-        public AddEditPage()
+
+        public string Flag = "default";
+
+        public Data.Partners _currentProduct = new Data.Partners();
+
+        public AddEditPage(Data.Partners product)
         {
             InitializeComponent();
+
+            if (product != null)
+            {
+                _currentProduct = product;
+                Flag = "Edit";
+            }
+            else
+            {
+                Flag = "Add";
+            }
+            DataContext = _currentProduct;
+            
             TypeComboBox.ItemsSource = Data.MasterPolEntities.GetContext().PartnerType.ToList();
+            init();
+
+        }
+
+        public void init()
+        {
+            TypeComboBox.SelectedItem = Data.MasterPolEntities.GetContext().PartnerType
+                        .Where(d => d.ID == _currentProduct.PartnerTypeID).FirstOrDefault();
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
@@ -43,7 +68,7 @@ namespace MasterPolProject.Pages
             }
             if (String.IsNullOrEmpty(TypeComboBox.Text))
             {
-                err.AppendLine("Заполните Тип партнера!");
+                err.AppendLine("Выберите Тип партнера!");
             }
             if (String.IsNullOrEmpty(RatingTB.Text))
             {
@@ -69,6 +94,13 @@ namespace MasterPolProject.Pages
             if (err.Length > 0)
             {
                 MessageBox.Show(err.ToString(), "Внимание!", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
+            else
+            {
+                
+
+
             }
 
 
