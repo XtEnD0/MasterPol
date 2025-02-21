@@ -27,9 +27,7 @@
         <StackPanel Grid.Column="0" Grid.Row="0" Width="250"
                     VerticalAlignment="Center" HorizontalAlignment="Center">
             <Label Content="Наименование:" Margin="0,0,0,0"></Label>
-            <TextBox x:Name="NameTB"  Height="30">
-                
-            </TextBox>
+            <TextBox x:Name="NameTB"  Height="30"></TextBox>
 
             <Label Content="Тип партнера:"  Margin="0,10,0,0"></Label>
             <ComboBox x:Name="TypeComboBox" DisplayMemberPath="TypeName"  Height="30"
@@ -41,19 +39,30 @@
 
             </TextBox>
 
-            <Label Content="Адрес:"  Margin="0,10,0,0"></Label>
-            <TextBox x:Name="AdressTB"  Height="30">
+            <Label Content="Область:"  Margin="0,10,0,0"></Label>
+            <TextBox x:Name="AreaTB"  Height="30"></TextBox>
 
-            </TextBox>
-            
-            
+            <Label Content="Город:"  Margin="0,10,0,0"></Label>
+            <TextBox x:Name="CityTB"  Height="30"></TextBox>
+
+            <Label Content="Индекс:"  Margin="0,10,0,0"></Label>
+            <TextBox x:Name="IndexTB"  Height="30"></TextBox>
+
+
 
         </StackPanel>
 
 
         <StackPanel Grid.Column="1" Grid.Row="0" Width="250"
                     VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Label Content="ФИО Директора:"></Label>
+
+            <Label Content="Улица:"  Margin="0,0,0,0"></Label>
+            <TextBox x:Name="StreetTB"  Height="30"></TextBox>
+
+            <Label Content="Дом:"  Margin="0,10,0,0"></Label>
+            <TextBox x:Name="HouseTB"  Height="30"></TextBox>
+
+            <Label Content="ФИО Директора:" Margin="0,10,0,0"></Label>
             <TextBox x:Name="DirectorTB" Height="30"></TextBox>
 
             <Label Content="Телефон:"  Margin="0,10,0,0"></Label>
