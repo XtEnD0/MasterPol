@@ -38,5 +38,10 @@ namespace MasterPolProject.Pages
         {
             Classes.Manager.MainFrame.Navigate(new Pages.AddEditPage((sender as Button).DataContext as Data.Partners));
         }
+
+        private void StoryButton_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.Manager.MainFrame.Navigate(new Pages.DataGridPage((sender as Button).DataContext as Data.Partners));
+        }
     }
 }

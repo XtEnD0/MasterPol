@@ -135,6 +135,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\DataGridPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\ViewPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -143,6 +147,9 @@
   <ItemGroup>
     <Compile Include="Pages\AddEditPage.xaml.cs">
       <DependentUpon>AddEditPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DataGridPage.xaml.cs">
+      <DependentUpon>DataGridPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ViewPage.xaml.cs">
       <DependentUpon>ViewPage.xaml</DependentUpon>

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\lisav\Desktop\MasterPol\MasterPolProject\MasterPolProject\App.xaml
-3-580570174
+41069280462
 2-747231112
-24-597412933
+25-851672965
 18510682299
-MainWindow.xaml;Pages\AddEditPage.xaml;Pages\ViewPage.xaml;
+MainWindow.xaml;Pages\AddEditPage.xaml;Pages\DataGridPage.xaml;Pages\ViewPage.xaml;
 
-False
+True
 
