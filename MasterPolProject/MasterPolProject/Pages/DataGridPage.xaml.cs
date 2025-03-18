@@ -20,15 +20,26 @@ namespace MasterPolProject.Pages
     /// </summary>
     public partial class DataGridPage : Page
     {
-        public Data.Partners _currentEl = new Data.Partners();
-        public DataGridPage(Data.Partners product)
+        public DataGridPage(int ProductID)
         {
             InitializeComponent();
-            _currentEl = product;
-            DataContext = _currentEl;
 
-            StoryGrid.ItemsSource = Data.MasterPolEntities.GetContext().Products.ToList();
+            LoadSalesHistory(ProductID);
+        }
 
+        private void LoadSalesHistory(int PartnerID)
+        {
+            StoryGrid.ItemsSource = Data.MasterPolEntities.GetContext().PartnerProducts.
+                Where(s => s.PartnerID == PartnerID).ToList();
+
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (Classes.Manager.MainFrame.CanGoBack)
+            {
+                Classes.Manager.MainFrame.GoBack();
+            }
         }
     }
 }

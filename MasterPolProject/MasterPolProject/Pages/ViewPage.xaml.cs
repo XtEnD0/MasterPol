@@ -41,7 +41,11 @@ namespace MasterPolProject.Pages
 
         private void StoryButton_Click(object sender, RoutedEventArgs e)
         {
-            Classes.Manager.MainFrame.Navigate(new Pages.DataGridPage((sender as Button).DataContext as Data.Partners));
+            Button button = sender as Button;
+            if (button != null && button.Tag is int PartnerID)
+            {
+                Classes.Manager.MainFrame.Navigate(new Pages.DataGridPage(PartnerID));
+            }
         }
     }
 }

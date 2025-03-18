@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-S:\MasterPol\MasterPolProject\MasterPolProject\obj\Debug\
+C:\Users\lisav\Desktop\MasterPol\MasterPolProject\MasterPolProject\obj\Debug\
 MasterPolProject
 none
 false
 DEBUG;TRACE
-S:\MasterPol\MasterPolProject\MasterPolProject\App.xaml
+C:\Users\lisav\Desktop\MasterPol\MasterPolProject\MasterPolProject\App.xaml
 41069280462
 2-747231112
 24-9313598
-181594332784
+18510682299
 MainWindow.xaml;Pages\AddEditPage.xaml;Pages\DataGridPage.xaml;Pages\ViewPage.xaml;
 
 False
